@@ -54,5 +54,15 @@ public class ApiExceptionHandler {
         
     }
 
+    /*
+     * User Defined Exception
+     */
+    @ExceptionHandler(ApiException.class)
+    public ResponseEntity<?> handleApiException(HttpServletRequest request, Exception ex) throws Exception {
+        ResponseDto.ResponseDtoBuilder responseBuilder = ResponseDto.builder();
+        responseBuilder.code("501").message(ex.getMessage());
+        return ResponseEntity.ok(responseBuilder.build());
+    }
+
    
 }

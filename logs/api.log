@@ -8560,3 +8560,301 @@ jakarta.validation.ConstraintViolationException: createItem.arg1: This item type
 2024-08-13T16:27:54.778+09:00  WARN 17928 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.mzc.item_service.dto.ResponseDto> com.mzc.item_service.controller.ItemControlller.createItem(com.mzc.item_service.dto.ItemDto,java.lang.String): [Field error in object 'itemDto' on field 'id': rejected value [null]; codes [NotBlank.itemDto.id,NotBlank.id,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDto.id,id]; arguments []; default message [id]]; default message [ID is a required field.]] ]
 2024-08-13T16:28:49.160+09:00  WARN 17928 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.mzc.item_service.dto.ResponseDto> com.mzc.item_service.controller.ItemControlller.createItem(com.mzc.item_service.dto.ItemDto,java.lang.String): [Field error in object 'itemDto' on field 'id': rejected value []; codes [NotBlank.itemDto.id,NotBlank.id,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDto.id,id]; arguments []; default message [id]]; default message [ID is a required field.]] ]
 2024-08-13T16:29:21.560+09:00  WARN 17928 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.mzc.item_service.dto.ResponseDto> com.mzc.item_service.controller.ItemControlller.createItem(com.mzc.item_service.dto.ItemDto,java.lang.String): [Field error in object 'itemDto' on field 'id': rejected value []; codes [NotBlank.itemDto.id,NotBlank.id,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDto.id,id]; arguments []; default message [id]]; default message [ID is a required field.]] ]
+2024-08-13T16:36:41.599+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:36:41.601+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:36:41.603+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:36:41.694+09:00  INFO 11072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-13T16:36:41.697+09:00  INFO 11072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-13T16:36:43.172+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:36:43.271+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-08-13T16:36:44.552+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:36:44.570+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:36:44.571+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:36:44.684+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:36:44.686+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2987 ms
+2024-08-13T16:36:45.189+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:36:45.290+09:00  INFO 11072 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-13T16:36:45.341+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:36:45.765+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:36:45.812+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-13T16:36:46.533+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75edc266
+2024-08-13T16:36:46.535+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-13T16:36:46.588+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:36:46.590+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:36:47.744+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:36:47.908+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:36:48.604+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:36:49.970+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:36:49.994+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:36:50.163+09:00  INFO 11072 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-13T16:36:50.165+09:00  INFO 11072 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-13T16:36:50.168+09:00  INFO 11072 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-13T16:36:50.168+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:36:50.202+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 9.173 seconds (process running for 9.997)
+2024-08-13T16:37:42.482+09:00  WARN 11072 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.mzc.item_service.dto.ResponseDto> com.mzc.item_service.controller.ItemControlller.createItem(com.mzc.item_service.dto.ItemDto,java.lang.String): [Field error in object 'itemDto' on field 'id': rejected value [111111111111111]; codes [Size.itemDto.id,Size.id,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDto.id,id]; arguments []; default message [id],10,0]; default message [ID can be up to 10 characters long.]] ]
+2024-08-13T16:38:53.640+09:00  WARN 11072 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.mzc.item_service.dto.ResponseDto> com.mzc.item_service.controller.ItemControlller.createItem(com.mzc.item_service.dto.ItemDto,java.lang.String): [Field error in object 'itemDto' on field 'id': rejected value []; codes [NotBlank.itemDto.id,NotBlank.id,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [itemDto.id,id]; arguments []; default message [id]]; default message [ID is a required field.]] ]
+2024-08-13T16:41:37.436+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-08-13T16:41:37.781+09:00  INFO 11072 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:41:37.786+09:00  INFO 11072 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-13T16:41:37.818+09:00  INFO 11072 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-13T16:41:37.916+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:41:37.916+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:41:37.917+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:41:38.319+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:41:38.328+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-08-13T16:41:38.493+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:41:38.495+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:41:38.495+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:41:38.515+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:41:38.516+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 597 ms
+2024-08-13T16:41:38.666+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:41:38.673+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:41:38.689+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:41:38.693+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-13T16:41:38.718+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ca4cb84
+2024-08-13T16:41:38.719+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-13T16:41:38.721+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:41:38.722+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:41:38.777+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:41:38.906+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:41:39.103+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:41:39.596+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:41:39.629+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:41:39.690+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:41:39.712+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 1.834 seconds (process running for 299.451)
+2024-08-13T16:41:39.717+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:43:38.713+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-13T16:43:39.091+09:00  INFO 11072 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:43:39.144+09:00  INFO 11072 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-08-13T16:43:39.193+09:00  INFO 11072 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-08-13T16:43:39.446+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:43:39.451+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:43:39.465+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:43:40.258+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:43:40.317+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2024-08-13T16:43:40.510+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:43:40.511+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:43:40.512+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:43:40.525+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:43:40.526+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1053 ms
+2024-08-13T16:43:40.665+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:43:40.669+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:43:40.683+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:43:40.684+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-08-13T16:43:40.707+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ced9cde
+2024-08-13T16:43:40.708+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-08-13T16:43:40.708+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:43:40.709+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:43:40.802+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:43:41.029+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:43:41.189+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:43:41.575+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:43:41.587+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:43:41.615+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:43:41.622+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 2.296 seconds (process running for 421.34)
+2024-08-13T16:43:41.625+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:46:51.920+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-13T16:46:52.321+09:00  INFO 11072 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:46:52.322+09:00  INFO 11072 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-08-13T16:46:52.389+09:00  INFO 11072 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-08-13T16:46:52.547+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:46:52.548+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:46:52.549+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:46:52.992+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:46:53.012+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2024-08-13T16:46:53.164+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:46:53.165+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:46:53.166+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:46:53.182+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:46:53.183+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 631 ms
+2024-08-13T16:46:53.282+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:46:53.285+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:46:53.298+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:46:53.301+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-08-13T16:46:53.322+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65644b8a
+2024-08-13T16:46:53.323+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-08-13T16:46:53.325+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:46:53.325+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:46:53.368+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:46:53.542+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:46:53.684+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:46:53.995+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:46:54.000+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:46:54.019+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:46:54.025+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 1.571 seconds (process running for 613.716)
+2024-08-13T16:46:54.029+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:49:39.807+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-08-13T16:49:40.046+09:00  INFO 11072 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:49:40.047+09:00  INFO 11072 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-08-13T16:49:40.070+09:00  INFO 11072 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-08-13T16:49:40.141+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:49:40.142+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:49:40.142+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:49:40.357+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:49:40.371+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2024-08-13T16:49:40.483+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:49:40.484+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:49:40.485+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:49:40.494+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:49:40.495+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 351 ms
+2024-08-13T16:49:40.568+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:49:40.571+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:49:40.590+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:49:40.590+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-08-13T16:49:40.604+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b01a368
+2024-08-13T16:49:40.605+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-08-13T16:49:40.605+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:49:40.606+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:49:40.636+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:49:40.769+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:49:40.873+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:49:41.174+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:49:41.178+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:49:41.197+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:49:41.203+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 1.082 seconds (process running for 780.87)
+2024-08-13T16:49:41.205+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:50:45.465+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-08-13T16:50:45.724+09:00  INFO 11072 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:50:45.725+09:00  INFO 11072 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-08-13T16:50:45.733+09:00  INFO 11072 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-08-13T16:50:45.801+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:50:45.802+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:50:45.803+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:50:46.019+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:50:46.027+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-08-13T16:50:46.127+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:50:46.128+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:50:46.128+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:50:46.136+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:50:46.137+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 332 ms
+2024-08-13T16:50:46.209+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:50:46.213+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:50:46.220+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:50:46.221+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-08-13T16:50:46.237+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@608c7b14
+2024-08-13T16:50:46.237+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-08-13T16:50:46.238+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:50:46.238+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:50:46.266+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:50:46.384+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:50:46.479+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:50:46.754+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:50:46.761+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:50:46.777+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:50:46.781+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 0.999 seconds (process running for 846.439)
+2024-08-13T16:50:46.782+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:51:37.912+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-13T16:51:38.280+09:00  INFO 11072 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:51:38.280+09:00  INFO 11072 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-08-13T16:51:38.294+09:00  INFO 11072 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-08-13T16:51:38.379+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:51:38.379+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:51:38.380+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:51:38.584+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:51:38.593+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2024-08-13T16:51:38.697+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:51:38.698+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:51:38.698+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:51:38.708+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:51:38.708+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 326 ms
+2024-08-13T16:51:38.771+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:51:38.773+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:51:38.778+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:51:38.779+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-08-13T16:51:38.792+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fcb8032
+2024-08-13T16:51:38.793+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-08-13T16:51:38.793+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:51:38.794+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:51:38.822+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:51:38.988+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:51:39.082+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:51:39.382+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:51:39.389+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:51:39.410+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:51:39.415+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 1.06 seconds (process running for 899.066)
+2024-08-13T16:51:39.418+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:52:04.120+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-13T16:52:04.367+09:00  INFO 11072 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:52:04.368+09:00  INFO 11072 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-08-13T16:52:04.383+09:00  INFO 11072 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-08-13T16:52:04.472+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:52:04.473+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:52:04.474+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:52:04.662+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:52:04.668+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-08-13T16:52:04.772+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:52:04.773+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:52:04.774+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:52:04.783+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:52:04.784+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 306 ms
+2024-08-13T16:52:04.852+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:52:04.855+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:52:04.861+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:52:04.863+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-08-13T16:52:04.880+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29ea7b5d
+2024-08-13T16:52:04.881+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-08-13T16:52:04.881+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:52:04.882+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:52:04.911+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:52:05.036+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:52:05.117+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:52:05.403+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:52:05.423+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:52:05.447+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:52:05.452+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 1.002 seconds (process running for 925.099)
+2024-08-13T16:52:05.453+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:53:08.847+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-13T16:53:09.208+09:00  INFO 11072 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:53:09.208+09:00  INFO 11072 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-08-13T16:53:09.221+09:00  INFO 11072 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-08-13T16:53:09.318+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:53:09.319+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:53:09.319+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:53:09.556+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:53:09.563+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-08-13T16:53:09.724+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:53:09.727+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:53:09.728+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:53:09.748+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:53:09.748+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 426 ms
+2024-08-13T16:53:09.855+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:53:09.858+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:53:09.864+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:53:09.868+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-08-13T16:53:09.882+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5516f58e
+2024-08-13T16:53:09.883+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-08-13T16:53:09.885+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:53:09.886+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:53:09.926+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:53:10.074+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:53:10.178+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-13T16:53:10.556+09:00  INFO 11072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T16:53:10.561+09:00  INFO 11072 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-13T16:53:10.580+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T16:53:10.588+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 1.3 seconds (process running for 990.226)
+2024-08-13T16:53:10.591+09:00  INFO 11072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-13T16:53:51.566+09:00  INFO 11072 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-13T16:53:51.933+09:00  INFO 11072 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:53:51.933+09:00  INFO 11072 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-08-13T16:53:51.943+09:00  INFO 11072 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-08-13T16:53:52.039+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Starting ItemServiceApplication using Java 17.0.11 with PID 11072 (C:\msaApp\item-service\bin\main started by MZC-USER in C:\msaApp\item-service)
+2024-08-13T16:53:52.040+09:00 DEBUG 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-13T16:53:52.042+09:00  INFO 11072 --- [restartedMain] c.m.item_service.ItemServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T16:53:52.247+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T16:53:52.253+09:00  INFO 11072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-08-13T16:53:52.344+09:00  INFO 11072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T16:53:52.345+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T16:53:52.346+09:00  INFO 11072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T16:53:52.356+09:00  INFO 11072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T16:53:52.357+09:00  INFO 11072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 313 ms
+2024-08-13T16:53:52.451+09:00  INFO 11072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T16:53:52.454+09:00  INFO 11072 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T16:53:52.459+09:00  INFO 11072 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T16:53:52.460+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-08-13T16:53:52.474+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@456a0b23
+2024-08-13T16:53:52.475+09:00  INFO 11072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-08-13T16:53:52.476+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T16:53:52.477+09:00  WARN 11072 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-13T16:53:52.502+09:00  INFO 11072 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T16:53:52.680+09:00  INFO 11072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T16:53:52.764+09:00  WARN 11072 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning

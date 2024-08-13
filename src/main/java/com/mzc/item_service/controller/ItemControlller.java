@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.mzc.item_service.dto.ItemDto;
 import com.mzc.item_service.dto.ResponseDto;
-
+import com.mzc.item_service.exception.ApiException;
 import com.mzc.item_service.service.ItemService;
 import com.mzc.item_service.valid.ItemTypeValid;
 
@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-
 @RestController
 @RequestMapping(value = "api/v1/items")
 @Slf4j
@@ -32,9 +31,16 @@ public class ItemControlller {
    
     // Validation Check
     @PostMapping(value = "/{itemType}")
-    public ResponseEntity<ResponseDto> createItem(@Valid @RequestBody ItemDto itemDto, @ItemTypeValid @PathVariable(value = "itemType") String itemType) {
+    public ResponseEntity<ResponseDto> createItem(@Valid @RequestBody ItemDto itemDto, @ItemTypeValid @PathVariable(value = "itemType") String itemType) throws Exception {
            
         ResponseDto.ResponseDtoBuilder responseBuilder = ResponseDto.builder();
+
+        // 사용자 정의 Exception 처리 테스트 코드        
+        // try {
+        //     Integer.parseInt("test");
+        // } catch (Exception e) {
+        //     throw new ApiException("테스트 에러");
+        // }
 
         itemDto.setItemType(itemType);
 
