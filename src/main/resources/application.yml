@@ -24,3 +24,17 @@ spring:
     properties:         
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+
+springdoc:
+  default-consumes-media-type: application/json    # API에서 기본적으로 application/json 형식으로 주고 받는다.
+  default-produces-media-type: application/json
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha                    # tag : API 기능을 하나의 그룹으로 묶는 경우
+    path: /swagger-ui.html                # springdoc HTML문서를 출력할 URI 경로
+    disable-swagger-default-url: true
+    display-query-params-without-oauth2: true  # URL 쿼리 매개변수를 이용해서 swagger-ui에 대한 처리를 활성화하는 설정
+
+
+
+
