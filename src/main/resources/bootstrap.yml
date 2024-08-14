@@ -1,0 +1,41 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: item-service   
+  profiles:
+    active: dev # Config Server에 item-service-dev.yml 파일을 생성한다.
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888   #  Config Server 참조
+
+
+# management 영역은 spring actuator api를 이용하여 저장소의 설정들이 변경되었을 때, 재기동 없이 변경사항을 적용하기 위한 설정입니다.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+      
+  
+  
+# .vscode /  {} launch.jso 파일에 다음 내용을 추가한다. (암호화)
+# {
+#     "configurations": [
+#        
+#         {
+#             "type": "java",
+#             "name": "Spring Boot-ItemServiceApplication<item-service>",
+#             "request": "launch",
+#             "cwd": "${workspaceFolder}",
+#             "mainClass": "com.mzc.item_service.ItemServiceApplication",
+#             "projectName": "item-service",
+#             "args": "",
+#             "envFile": "${workspaceFolder}/.env",
+#             "env": {
+#                 "ENCRYPT_KEY": "my-secret"
+#             }
+#         }
+#     ]
+# }

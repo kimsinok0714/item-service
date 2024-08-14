@@ -1,0 +1,504 @@
+2024-08-14T10:30:26.231+09:00  WARN 14928 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T10:30:26.264+09:00 ERROR 14928 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T10:30:47.702+09:00  WARN 4184 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T10:30:47.738+09:00 ERROR 4184 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T10:43:21.067+09:00  WARN 9836 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T10:43:21.097+09:00 ERROR 9836 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T10:51:28.277+09:00  WARN 3292 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T10:51:28.312+09:00 ERROR 3292 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T10:52:57.422+09:00  WARN 9768 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T10:52:57.447+09:00 ERROR 9768 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T10:55:54.415+09:00  WARN 2544 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T10:55:54.442+09:00 ERROR 2544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T10:59:43.946+09:00  WARN 1000 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T10:59:43.976+09:00 ERROR 1000 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T11:02:54.894+09:00  WARN 5168 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T11:02:54.924+09:00 ERROR 5168 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.UnsupportedOperationException: No decryption for FailsafeTextEncryptor. Did you configure the keystore correctly?
+	at org.springframework.cloud.bootstrap.encrypt.TextEncryptorUtils$FailsafeTextEncryptor.decrypt(TextEncryptorUtils.java:188) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+
+2024-08-14T11:12:58.802+09:00  WARN 17008 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T11:12:58.828+09:00 ERROR 17008 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(CipherCore.java:862) ~[na:na]
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(CipherCore.java:942) ~[na:na]
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:735) ~[na:na]
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(AESCipher.java:436) ~[na:na]
+	at java.base/javax.crypto.Cipher.doFinal(Cipher.java:2205) ~[na:na]
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	... 19 common frames omitted
+
+2024-08-14T11:14:26.227+09:00  WARN 6516 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T11:14:26.257+09:00 ERROR 6516 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(CipherCore.java:862) ~[na:na]
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(CipherCore.java:942) ~[na:na]
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:735) ~[na:na]
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(AESCipher.java:436) ~[na:na]
+	at java.base/javax.crypto.Cipher.doFinal(Cipher.java:2205) ~[na:na]
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	... 19 common frames omitted
+
+2024-08-14T11:16:10.838+09:00  WARN 16276 --- [restartedMain] EnvironmentDecryptApplicationInitializer : Cannot decrypt: key=spring.datasource.password
+2024-08-14T11:16:10.872+09:00 ERROR 16276 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Cannot decrypt: key=spring.datasource.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:158) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:136) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap.replaceAll(LinkedHashMap.java:731) ~[na:na]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:131) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:606) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:386) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-3.0.13.jar:3.0.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-3.0.13.jar:3.0.13]
+	at com.mzc.item_service.ItemServiceApplication.main(ItemServiceApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.0.13.jar:3.0.13]
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:143) ~[spring-cloud-context-4.0.0.jar:4.0.0]
+	... 16 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(CipherCore.java:862) ~[na:na]
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(CipherCore.java:942) ~[na:na]
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:735) ~[na:na]
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(AESCipher.java:436) ~[na:na]
+	at java.base/javax.crypto.Cipher.doFinal(Cipher.java:2205) ~[na:na]
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135) ~[spring-security-crypto-6.0.8.jar:6.0.8]
+	... 19 common frames omitted
+
+2024-08-14T11:17:03.864+09:00  INFO 17324 --- [restartedMain] c.m.item_service.ItemServiceApplication  : The following 1 profile is active: "dev"
+2024-08-14T11:17:04.781+09:00  INFO 17324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-14T11:17:04.837+09:00  INFO 17324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaceinterface.
+2024-08-14T11:17:05.063+09:00  INFO 17324 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bc8812d6-5593-3fff-95bf-93b158d09b3c
+2024-08-14T11:17:05.558+09:00  INFO 17324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2024-08-14T11:17:05.567+09:00  INFO 17324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-14T11:17:05.567+09:00  INFO 17324 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-08-14T11:17:05.625+09:00  INFO 17324 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-14T11:17:05.626+09:00  INFO 17324 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1744 ms
+2024-08-14T11:17:05.960+09:00  INFO 17324 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-14T11:17:06.005+09:00  INFO 17324 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-08-14T11:17:06.273+09:00  INFO 17324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-14T11:17:06.526+09:00  INFO 17324 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27c3c4fa
+2024-08-14T11:17:06.529+09:00  INFO 17324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-14T11:17:06.542+09:00  INFO 17324 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-14T11:17:06.545+09:00  WARN 17324 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-14T11:17:07.519+09:00  INFO 17324 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-14T11:17:07.526+09:00  INFO 17324 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-14T11:17:07.963+09:00  WARN 17324 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-14T11:17:09.361+09:00  INFO 17324 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-14T11:17:09.362+09:00  INFO 17324 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-14T11:17:09.379+09:00  INFO 17324 --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-14T11:17:09.396+09:00  INFO 17324 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 33 ms
+2024-08-14T11:17:09.445+09:00  WARN 17324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-14T11:17:09.778+09:00  INFO 17324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2024-08-14T11:17:09.964+09:00  INFO 17324 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 9.62 seconds (process running for 10.302)
+2024-08-14T11:17:28.682+09:00 DEBUG 17324 --- [http-nio-5000-exec-3] c.m.i.controller.ItemControlller         : request item id : P001
+2024-08-14T11:21:46.329+09:00  INFO 4904 --- [restartedMain] c.m.item_service.ItemServiceApplication  : The following 1 profile is active: "dev"
+2024-08-14T11:21:47.744+09:00  INFO 4904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-14T11:21:47.811+09:00  INFO 4904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaceinterface.
+2024-08-14T11:21:48.168+09:00  INFO 4904 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bc8812d6-5593-3fff-95bf-93b158d09b3c
+2024-08-14T11:21:48.779+09:00  INFO 4904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2024-08-14T11:21:48.794+09:00  INFO 4904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-14T11:21:48.795+09:00  INFO 4904 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-08-14T11:21:48.908+09:00  INFO 4904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-14T11:21:48.909+09:00  INFO 4904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2534 ms
+2024-08-14T11:21:49.337+09:00  INFO 4904 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-14T11:21:49.427+09:00  INFO 4904 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-08-14T11:21:49.800+09:00  INFO 4904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-14T11:21:50.246+09:00  INFO 4904 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@468e29a
+2024-08-14T11:21:50.248+09:00  INFO 4904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-14T11:21:50.272+09:00  INFO 4904 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-14T11:21:50.276+09:00  WARN 4904 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-14T11:21:51.479+09:00  INFO 4904 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-14T11:21:51.488+09:00  INFO 4904 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-14T11:21:51.987+09:00  WARN 4904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-14T11:21:53.756+09:00  WARN 4904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-14T11:21:54.078+09:00  INFO 4904 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-14T11:21:54.210+09:00  INFO 4904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2024-08-14T11:21:54.436+09:00  INFO 4904 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 17.807 seconds (process running for 18.655)
+2024-08-14T11:21:54.620+09:00  INFO 4904 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-14T11:21:54.621+09:00  INFO 4904 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-14T11:21:54.622+09:00  INFO 4904 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-14T11:22:11.846+09:00  INFO 844 --- [restartedMain] c.m.item_service.ItemServiceApplication  : The following 1 profile is active: "dev"
+2024-08-14T11:22:13.313+09:00  INFO 844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-14T11:22:13.381+09:00  INFO 844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaceinterface.
+2024-08-14T11:22:13.659+09:00  INFO 844 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bc8812d6-5593-3fff-95bf-93b158d09b3c
+2024-08-14T11:22:14.318+09:00  INFO 844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2024-08-14T11:22:14.336+09:00  INFO 844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-14T11:22:14.337+09:00  INFO 844 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-08-14T11:22:14.443+09:00  INFO 844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-14T11:22:14.444+09:00  INFO 844 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2548 ms
+2024-08-14T11:22:14.893+09:00  INFO 844 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-14T11:22:14.957+09:00  INFO 844 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-08-14T11:22:15.424+09:00  INFO 844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-14T11:22:15.823+09:00  INFO 844 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bd16aa7
+2024-08-14T11:22:15.826+09:00  INFO 844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-14T11:22:15.845+09:00  INFO 844 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-14T11:22:15.847+09:00  WARN 844 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-14T11:22:17.073+09:00  INFO 844 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-14T11:22:17.081+09:00  INFO 844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-14T11:22:17.610+09:00  WARN 844 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-14T11:22:19.439+09:00  WARN 844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-14T11:22:19.811+09:00  INFO 844 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-14T11:22:19.971+09:00  INFO 844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2024-08-14T11:22:20.226+09:00  INFO 844 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 13.155 seconds (process running for 13.949)
+2024-08-14T11:22:22.091+09:00  INFO 844 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-14T11:22:22.092+09:00  INFO 844 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-14T11:22:22.094+09:00  INFO 844 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-14T11:23:27.859+09:00  INFO 844 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-14T11:23:27.880+09:00  INFO 844 --- [Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-14T11:23:27.881+09:00  INFO 844 --- [Thread-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-08-14T11:23:27.893+09:00  INFO 844 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-14T11:23:27.896+09:00  INFO 844 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-14T11:23:27.910+09:00  INFO 844 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-14T11:23:30.526+09:00  INFO 844 --- [restartedMain] c.m.item_service.ItemServiceApplication  : The following 1 profile is active: "dev"
+2024-08-14T11:23:30.885+09:00  INFO 844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-14T11:23:30.900+09:00  INFO 844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaceinterface.
+2024-08-14T11:23:30.956+09:00  INFO 844 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=be2c783f-c578-3afa-9a1f-b57336e974cb
+2024-08-14T11:23:31.024+09:00  INFO 844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2024-08-14T11:23:31.025+09:00  INFO 844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-14T11:23:31.026+09:00  INFO 844 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-08-14T11:23:31.045+09:00  INFO 844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-14T11:23:31.046+09:00  INFO 844 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 517 ms
+2024-08-14T11:23:31.118+09:00  INFO 844 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-14T11:23:31.127+09:00  INFO 844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-14T11:23:31.155+09:00  INFO 844 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@248a6693
+2024-08-14T11:23:31.156+09:00  INFO 844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-14T11:23:31.158+09:00  INFO 844 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-14T11:23:31.158+09:00  WARN 844 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-14T11:23:31.508+09:00  INFO 844 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-14T11:23:31.509+09:00  INFO 844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-14T11:23:31.707+09:00  WARN 844 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-14T11:23:32.411+09:00  WARN 844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-14T11:23:32.541+09:00  INFO 844 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-08-14T11:23:32.574+09:00  INFO 844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2024-08-14T11:23:32.716+09:00  INFO 844 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 4.716 seconds (process running for 86.439)
+2024-08-14T11:23:32.740+09:00  INFO 844 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   HealthEndpointWebExtensionConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.health.HealthEndpoint; SearchStrategy: all) found bean 'healthEndpoint' (OnBeanCondition)
+
+   HealthEndpointWebExtensionConfiguration#healthEndpointWebExtension matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.health.HealthEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HealthEndpointWebExtensionConfiguration.MvcAdditionalHealthEndpointPathsConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   HealthEndpointWebExtensionConfiguration.JerseyAdditionalHealthEndpointPathsConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.glassfish.jersey.server.ResourceConfig' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-08-14T11:24:04.271+09:00  INFO 844 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-14T11:24:04.286+09:00  INFO 844 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-14T11:24:04.292+09:00  INFO 844 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-14T11:24:04.293+09:00  INFO 844 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-08-14T11:24:04.304+09:00  INFO 844 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-08-14T11:24:07.512+09:00  INFO 844 --- [restartedMain] c.m.item_service.ItemServiceApplication  : The following 1 profile is active: "dev"
+2024-08-14T11:24:25.639+09:00  INFO 13420 --- [restartedMain] c.m.item_service.ItemServiceApplication  : The following 1 profile is active: "dev"
+2024-08-14T11:24:26.865+09:00  INFO 13420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-14T11:24:26.934+09:00  INFO 13420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaceinterface.
+2024-08-14T11:24:27.117+09:00  INFO 13420 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bc8812d6-5593-3fff-95bf-93b158d09b3c
+2024-08-14T11:24:27.640+09:00  INFO 13420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2024-08-14T11:24:27.665+09:00  INFO 13420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-14T11:24:27.666+09:00  INFO 13420 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-08-14T11:24:27.754+09:00  INFO 13420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-14T11:24:27.755+09:00  INFO 13420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2095 ms
+2024-08-14T11:24:28.078+09:00  INFO 13420 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-14T11:24:28.126+09:00  INFO 13420 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-08-14T11:24:28.406+09:00  INFO 13420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-14T11:24:28.710+09:00  INFO 13420 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@213e67a5
+2024-08-14T11:24:28.713+09:00  INFO 13420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-14T11:24:28.739+09:00  INFO 13420 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-14T11:24:28.742+09:00  WARN 13420 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-14T11:24:29.710+09:00  INFO 13420 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-14T11:24:29.738+09:00  INFO 13420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-14T11:24:30.172+09:00  WARN 13420 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-14T11:24:32.199+09:00  WARN 13420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-14T11:24:32.509+09:00  INFO 13420 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-08-14T11:24:32.659+09:00  INFO 13420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2024-08-14T11:24:32.953+09:00  INFO 13420 --- [restartedMain] c.m.item_service.ItemServiceApplication  : Started ItemServiceApplication in 11.637 seconds (process running for 12.276)
+2024-08-14T11:24:33.401+09:00  INFO 13420 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-14T11:24:33.402+09:00  INFO 13420 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-14T11:24:33.405+09:00  INFO 13420 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-14T11:26:41.850+09:00  INFO 13420 --- [http-nio-5000-exec-3] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-14T11:26:41.907+09:00  INFO 13420 --- [http-nio-5000-exec-3] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://127.0.0.1:8888
+2024-08-14T11:26:45.026+09:00  INFO 13420 --- [http-nio-5000-exec-3] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=item-service, profiles=[dev], label=null, version=null, state=null
+2024-08-14T11:26:45.027+09:00  INFO 13420 --- [http-nio-5000-exec-3] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:kimsinok0714/config-repo.git/item-service-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:kimsinok0714/config-repo.git/application.yml'}]

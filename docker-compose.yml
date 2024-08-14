@@ -2,17 +2,16 @@ version: '3.8'
 
 services:
 
-  item-services:
-    image: itemservice:latest
-    ports: 
-      - "8080:8080"
-    networks:
-      backend:
-        aliases:
-          - "item-service" 
-    depends_on:
-      - db
-
+  # item-services:
+  #   image: itemservice:latest
+  #   ports: 
+  #     - "8080:8080"
+  #   networks:
+  #     backend:
+  #       aliases:
+  #         - "item-service" 
+  #   depends_on:
+  #     - db
 
   db:
     image: mysql:8.4.2
