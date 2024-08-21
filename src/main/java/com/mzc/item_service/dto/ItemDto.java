@@ -1,10 +1,10 @@
 package com.mzc.item_service.dto;
 
+
+import org.hibernate.boot.jaxb.hbm.internal.RepresentationModeConverter;
+import org.springframework.hateoas.RepresentationModel;
+
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
-import lombok.Data;
 
 /*
  * @Data
@@ -15,8 +15,21 @@ import lombok.Data;
  * 5. @RequiredArgsConstructor : final, @NonNull 필드를 대상으로 생성자 메소드를 생성한다.
  */
 
-@Data
-public class ItemDto {
+
+ import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
+ import lombok.AllArgsConstructor;
+ import lombok.Builder;
+ import lombok.Data;
+ import lombok.NoArgsConstructor;
+ 
+ @Data
+ @Builder
+ @NoArgsConstructor
+ @AllArgsConstructor
+public class ItemDto extends RepresentationModel<ItemDto> {
+    
     @Schema(description = "물품ID", example = "TESTID")
     @NotBlank(message = "ID is a required field.")
     @Size(max = 10, message = "ID can be up to 10 characters long.")
@@ -37,7 +50,7 @@ public class ItemDto {
     
     @Schema(hidden= true)
     private String updDate;
-    
-    @Schema(description = "물품유형", example = "F: 음식, C: 의류")
-    private String itemType;
+
+    private String accountId;
+  
 }

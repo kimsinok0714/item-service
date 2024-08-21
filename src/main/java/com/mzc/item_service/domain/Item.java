@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-
 @Builder
 @Getter
 @Setter
@@ -33,7 +32,9 @@ public class Item {
     private String regDate;
     @Column(name = "upd_date", length = 15)
     private String updDate;
-    private String itemType;
+    @Column(name = "account_id")
+    private String accountId;
+   
 }
 
 
