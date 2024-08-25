@@ -7,6 +7,19 @@ import org.springframework.hateoas.mediatype.hal.Jackson2HalModule;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+@Configuration
+public class JacksonConfig {
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new Jackson2HalModule());
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        return objectMapper;
+    }
+}
+
+
 /*
  *  [HAL+JSON] 형식을 처리
  * 
@@ -37,17 +50,3 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  *         }
  *      } 
  */
-
-
-@Configuration
-public class FeignClientConfiguration {
-
-    @Bean
-    public ObjectMapper objectMapper() {
-       ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new Jackson2HalModule());
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        return objectMapper;
-    }
-    
-}

@@ -3,7 +3,7 @@ package com.mzc.item_service.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.google.common.net.MediaType;
+
 import com.mzc.item_service.dto.ItemDto;
 import com.mzc.item_service.exception.ApiException;
 import com.mzc.item_service.service.ItemService;
@@ -20,13 +20,14 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.MediaTypes;
+import org.springframework.http.MediaType;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -57,7 +58,7 @@ public class ItemControlller {
         @ApiResponse(responseCode = "501", description = "ApiException")
     })       
     @PostMapping
-    public ResponseEntity<ItemDto> createItem(@Valid @RequestBody ItemDto itemDto) throws Exception {
+    public EntityModel<ItemDto> createItem(@Valid @RequestBody ItemDto itemDto) throws Exception {
 
         String accountId = request.getHeader("accountId").toString().replace("[", "").replace("]", "");
         
@@ -71,34 +72,36 @@ public class ItemControlller {
 
         log.debug("saved item id : {}", savedItemDto.getId());      
 
-        savedItemDto.add(linkTo(methodOn(ItemControlller.class).retrieveItemById(savedItemDto.getId())).withSelfRel());;
+        EntityModel<ItemDto> entityModel = EntityModel.of(savedItemDto);
+
+        entityModel.add(linkTo(methodOn(ItemControlller.class).retrieveItemById(savedItemDto.getId())).withSelfRel());;
         
-        return ResponseEntity.ok(savedItemDto);        
+        return entityModel;
         
     }
     
-
     
-    @Operation(summary = "아이템 상세 조회 요청", description = "아이템 상세 조회 요청을 처리한다.", tags = {"retrieveItemById"})  
+    @Operation(summary = "아이템 상세 조회  요청", description = "아이템 상세 조회 요청을 처리한다.", tags = {"retrieveItemById"})  
     @ApiResponses({
         @ApiResponse(responseCode = "200", description = "SUCCESS"),
         @ApiResponse(responseCode = "500", description = "ApiException")
-    })  
-    @RequestMapping(value = "/{id}", produces = MediaTypes.HAL_JSON_VALUE)
-    public ResponseEntity<ItemDto> retrieveItemById(@PathVariable(value = "id") String id) throws Exception {
+    })   
+    @GetMapping(value = "/{id}", produces = MediaTypes.HAL_JSON_VALUE)     // application/hal+json
+    public EntityModel<ItemDto> retrieveItemById(@PathVariable(value = "id") String id) throws Exception {
 
-        //EntityModel은 단순한 데이터 또는 객체에 추가적인 하이퍼미디어 링크를 제공하기 위해서 사용된다.
+        //EntityModel은 데이터 또는 객체에 추가적인 하이퍼미디어 링크를 제공하기 위해서 사용된다.
         log.info("item id = {}", id);
 
         ItemDto itemDto = itemService.findItemById(id);
-
         if (itemDto == null) {
             throw new ApiException("There is no item associated with the provided id");
         }
         
-        itemDto.add(linkTo(methodOn(ItemControlller.class).createItem(itemDto)).withRel("create-item"));        
+        EntityModel<ItemDto> entityModel = EntityModel.of(itemDto);
+
+        entityModel.add(linkTo(methodOn(ItemControlller.class).createItem(itemDto)).withRel("create-item"));        
         
-        return ResponseEntity.ok(itemDto);
+        return entityModel;
 
     }
 
