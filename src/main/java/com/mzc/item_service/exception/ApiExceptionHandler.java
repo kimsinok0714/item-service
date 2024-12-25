@@ -14,10 +14,10 @@ import jakarta.servlet.http.HttpServletRequest;
 
 /*
  * @ControllerAdvice
- * - @ResponseEntity에서 특정 객체를 json 타입으로 응답하기 위해서 사용됩니다.
+ * - @ResponseEntity에서 특정 객체를 View 타입으로 응답하기 위해서 사용됩니다.
 
  * @RestControllerAdvice
- * - 스프링에서 전역적으로 예외를 처리하는 클래스입니다.
+ * - 스프링에서 컨트롤러 전역에서 발생하는 예외를 처리하는 클래스입니다.
  * - @ResponseBody에서 특정 객체를 json 타입으로 응답하기 위해서 사용됩니다.
  */
 
