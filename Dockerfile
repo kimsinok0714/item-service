@@ -5,6 +5,8 @@
 
 FROM openjdk:17-slim as build
 WORKDIR /application
+
+# ARG : Dockerfile에서 빌드 타임(Build time)에 값을 설정할 수 있는 변수를 정의하는 명령어
 ARG JAR_FILE=build/libs/item-service-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE}  application.jar
 RUN java -Djarmode=layertools -jar application.jar extract
